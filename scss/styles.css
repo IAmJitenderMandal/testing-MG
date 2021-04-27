@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:link {
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left-side {
+  padding: 0 2rem 2rem 2rem;
+  width: 20rem;
+  background-color: #1d426c;
+}
+
+.container .left-side .inner-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .left-side .inner-container .title-text {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  border-left: 0.8rem solid #f9be01;
+  padding-left: 1rem;
+  padding-top: 3rem;
+}
+
+.container .left-side .inner-container .title-text .sub-txt {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.container .left-side .inner-container .description-text .desc-para {
+  margin-bottom: 2rem;
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.container .left-side .inner-container .description-text .desc-para a {
+  color: #8a9eb3;
+}
+
+.container .left-side .inner-container .bottom .email {
+  font-size: 0.9rem;
+  color: #f2f2f2;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.container .left-side .inner-container .bottom .logo-text {
+  font-size: 1.2rem;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.container .left-side .inner-container .bottom .logo-text span {
+  color: #987c3d;
+}
+
+.container .right-side {
+  width: 100%;
+}
+
+.container .right-side .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+.container .right-side .form form {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.container .right-side .form form select {
+  width: 50%;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #1d426c;
+  color: #1d426c;
+  background-color: transparent;
+}
+
+.container .right-side .map-container {
+  text-align: center;
+  height: 100%;
+  padding-top: 5rem;
+}
+
+.container .right-side .map-container #map {
+  margin: 0 auto;
+  width: 40rem;
+  height: 28rem;
+}
+
+.popover {
+  position: absolute;
+  display: none;
+  background: #fff;
+  border: 1px solid #999;
+  padding: 10px;
+  width: auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+  height: 8rem;
+  width: 10rem;
+  pointer-events: visible;
+}
+
+.popover .link {
+  color: blue;
+  display: block;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.popover:after,
+.popover:before {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/*# sourceMappingURL=styles.css.map */

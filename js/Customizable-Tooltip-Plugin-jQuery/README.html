@@ -1,0 +1,59 @@
+<h2 id="jquery-tooltip-plugin">jquery-tooltip-plugin</h2>
+<p>Basic jquery tooltip plugin.</p>
+<h1 id="installation">Installation</h1>
+<h2 id="load-the-jquery-file-the-plugin-file-and-the-plugin-stylesheet">Load the jQuery file, the plugin file, and the plugin stylesheet</h2>
+<pre><code class="lang-html">&lt;head&gt;
+   &lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.js&quot;&gt;&lt;/script&gt;
+   &lt;script type=&quot;text/javascript&quot; src=&quot;tooltip.js&quot;&gt;&lt;/script&gt;
+   &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;tooltip.css&quot;&gt;&lt;/link&gt;
+&lt;/head&gt;
+</code></pre>
+<h2 id="initialization-and-usage">Initialization and Usage</h2>
+<p>To use the plugin, simply add the title attribute in your HTML to the element you want to add the tooltip.</p>
+<pre><code class="lang-html">&lt;p class=&quot;paragraph&quot; title=&quot;Tooltips Are Fun!&quot;&gt;Hover Over Me!&lt;/p&gt;
+</code></pre>
+<p>Then, initialize the tooltip in your javascript code.</p>
+<pre><code class="lang-javascript">$(function()
+{
+  $(&#39;.paragraph&#39;).tooltip(options);
+});
+</code></pre>
+<h2 id="options">Options</h2>
+<p>background
+backgroundColor
+border
+borderRadius
+color
+fontFamily
+font-size
+padding
+textTransform
+transition
+textAlign</p>
+<h2 id="option-example-uses">Option Example Uses</h2>
+<pre><code class="lang-javascript">$(function()
+{
+  //Default Style
+  $(&#39;h1&#39;).tooltip();
+
+  //Orange gradient background with black borders and a box shadow
+  $(&#39;h2&#39;).tooltip({
+    &#39;background&#39;:&#39;linear-gradient(#994500,orange)&#39;,
+    &#39;borderBottom&#39;:&#39;2px solid black&#39;,
+    &#39;borderRight&#39;:&#39;2px solid black&#39;,
+    &#39;boxShadow&#39;:&#39;2px 2px 7px #555&#39;
+  });
+
+  //Slow tooltip
+  $(&#39;h3&#39;).tooltip({
+    &#39;backgroundColor&#39;:&#39;blue&#39;,
+    &#39;padding&#39;:&#39;15px&#39;,
+    &#39;transition&#39;:&#39;all 0.1s ease&#39;,
+  });
+
+  $(&#39;h4&#39;).tooltip({
+    &#39;backgroundColor&#39;:&#39;pink&#39;
+  });
+});
+</code></pre>
+<p>Link to the demo - <a href="https://pkellz.github.io/pk/tooltip-demo/">https://pkellz.github.io/pk/tooltip-demo/</a></p>
